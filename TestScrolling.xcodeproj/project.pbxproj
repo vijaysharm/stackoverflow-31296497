@@ -14,6 +14,7 @@
 		42831CC51B4B0714006B2123 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42831CC41B4B0714006B2123 /* Images.xcassets */; };
 		42831CC81B4B0714006B2123 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42831CC61B4B0714006B2123 /* LaunchScreen.xib */; };
 		42831CD41B4B0715006B2123 /* TestScrollingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42831CD31B4B0715006B2123 /* TestScrollingTests.m */; };
+		42831CDE1B4B0794006B2123 /* photo1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42831CDD1B4B0794006B2123 /* photo1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		42831CCD1B4B0715006B2123 /* TestScrollingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestScrollingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42831CD21B4B0715006B2123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42831CD31B4B0715006B2123 /* TestScrollingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestScrollingTests.m; sourceTree = "<group>"; };
+		42831CDD1B4B0794006B2123 /* photo1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo1.jpeg; path = ../../../../../Downloads/photo1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				42831CC11B4B0714006B2123 /* Main.storyboard */,
 				42831CC41B4B0714006B2123 /* Images.xcassets */,
 				42831CC61B4B0714006B2123 /* LaunchScreen.xib */,
+				42831CDD1B4B0794006B2123 /* photo1.jpeg */,
 				42831CB71B4B0714006B2123 /* Supporting Files */,
 			);
 			path = TestScrolling;
@@ -202,6 +205,7 @@
 				42831CC31B4B0714006B2123 /* Main.storyboard in Resources */,
 				42831CC81B4B0714006B2123 /* LaunchScreen.xib in Resources */,
 				42831CC51B4B0714006B2123 /* Images.xcassets in Resources */,
+				42831CDE1B4B0794006B2123 /* photo1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

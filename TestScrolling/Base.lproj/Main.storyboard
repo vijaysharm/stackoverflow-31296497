@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="sqP-vK-q8I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mep-YI-UDn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="NvQ-Ow-kfd">
+                                <rect key="frame" x="16" y="20" width="568" height="580"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTK-Cb-lxw">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="580"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iTK-Cb-lxw" firstAttribute="leading" secondItem="NvQ-Ow-kfd" secondAttribute="leading" id="Hd2-GZ-SjB"/>
+                                    <constraint firstAttribute="centerX" secondItem="iTK-Cb-lxw" secondAttribute="centerX" id="UYz-A7-ZuL"/>
+                                    <constraint firstAttribute="trailing" secondItem="iTK-Cb-lxw" secondAttribute="trailing" id="Ydg-Tb-2po"/>
+                                    <constraint firstAttribute="bottom" secondItem="iTK-Cb-lxw" secondAttribute="bottom" id="bq4-nz-l7j"/>
+                                    <constraint firstAttribute="centerY" secondItem="iTK-Cb-lxw" secondAttribute="centerY" id="g96-vP-JGe"/>
+                                    <constraint firstItem="iTK-Cb-lxw" firstAttribute="top" secondItem="NvQ-Ow-kfd" secondAttribute="top" id="x7d-Jk-vuB"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CeT-Bk-Esg"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NvQ-Ow-kfd" firstAttribute="top" secondItem="sqP-vK-q8I" secondAttribute="bottom" id="AcX-dG-5NI"/>
+                            <constraint firstItem="Mep-YI-UDn" firstAttribute="top" secondItem="NvQ-Ow-kfd" secondAttribute="bottom" id="EF4-HV-5m0"/>
+                            <constraint firstItem="NvQ-Ow-kfd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HGd-hQ-Ibb"/>
+                            <constraint firstItem="NvQ-Ow-kfd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pAa-H0-eWm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="iTK-Cb-lxw" id="XMQ-lA-f9N"/>
+                        <outlet property="scrollView" destination="NvQ-Ow-kfd" id="OvY-pG-Tsf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="303" y="414"/>
         </scene>
     </scenes>
 </document>
